@@ -1,0 +1,9 @@
+output
+data
+__pycache__
+.ipython
+.jupyter
+.local
+.cache
+.ipynb_checkpoints
+.config
