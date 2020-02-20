@@ -47,7 +47,9 @@ def training_loop(model, path, x_train, y_train, y_weight, epochs, l_rate):
 
     """
     if y_weight is None: y_weight = np.ones(x_train.shape[0])
-    x_tensor = torch.from_numpy(x_train.astype(np.float64)).unsqueeze_(-1)
+    x_tensor = torch.from_numpy(x_train.astype(np.float64))
+    if len(x_train.shape) == 1:
+        x_tensor = x_tensor.unsqueeze(-1)
     y_tensor = torch.from_numpy(y_train.astype(np.float64))
     y_weight_tensor = torch.from_numpy(y_weight.astype(np.float64))
     zero = torch.zeros(y_tensor.shape[0])
