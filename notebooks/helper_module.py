@@ -280,7 +280,7 @@ class CenterFieldValues2D():
         """Read center values from disk."""
         try:
             if self.of:
-                names = ['u_x', 'u_y', 'u_z', 'p', 'x', 'y', 'z']
+                names = ['x', 'y', 'z', 'u_x', 'u_y', 'u_z', 'p']
                 usecols = ['u_x', 'u_y', 'x', 'y']
             else:
                 names = ['f', 'ref', 'u_x', 'u_y', 'u_z', 'x', 'y', 'z']
