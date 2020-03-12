@@ -1,0 +1,3 @@
+phiScalarTransportFoam.C
+
+EXE = phiScalarTransportFoam
