@@ -7,3 +7,10 @@ __pycache__
 .cache
 .ipynb_checkpoints
 .config
+run
+linux64GccDPInt32Opt
+*.o
+*.dep
+lnInclude
+*.so
+.vscode
